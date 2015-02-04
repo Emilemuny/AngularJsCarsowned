@@ -3,7 +3,7 @@ angular.module('app').controller("MainController", function(){
   var vm= this; 
   vm.title = 'Cars I owned throught out the years';
   vm.searchInput = '';
-  vm.shows = [
+  vm.cars = [
 {
   title: 'Infiniti G35',
 year: 2005,
@@ -60,9 +60,9 @@ vm.orders = [
 ];
  vm.order = vm.orders[0];
   vm.new = {};
-  vm.addShow= function(){
-    vm.shows.push(vm.new);
-    vm.new = {};
+  vm.addcar= function(){
+    vm.cars.push(vm.new);
+    
 };
 });
 
